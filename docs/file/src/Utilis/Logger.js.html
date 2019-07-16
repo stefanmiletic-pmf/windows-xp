@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/Utilis/Logger.js</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers">Controllers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerFileBase.js~ControllerFileBase.html">ControllerFileBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerFileTXT.js~ControllerFileTXT.html">ControllerFileTXT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerPlatform.js~ControllerPlatform.html">ControllerPlatform</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerProperties.js~ControllerProperties.html">ControllerProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-jQuery">jQuery</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models">Models</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/File.js~File.html">File</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/FileProperties.js~FileProperties.html">FileProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/FileText.js~FileText.html">FileText</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utilis">Utilis</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/FunctionsFrontend.js~FunctionsFrontend.html">FunctionsFrontend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/Logger.js~Logger.html">Logger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/QueryController.js~QueryController.html">QueryController</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers">Viewers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerBase.js~ViewerBase.html">ViewerBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerIcon.js~ViewerIcon.html">ViewerIcon</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerPlatform.js~ViewerPlatform.html">ViewerPlatform</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerProperties.js~ViewerProperties.html">ViewerProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerTXT.js~ViewerTXT.html">ViewerTXT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerUtilis.js~ViewerUtilis.html">ViewerUtilis</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getZindex">getZindex</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-zIndex">zIndex</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers-builders">Viewers/Builders</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilder.js~WindowBuilder.html">WindowBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilderFilePropertiesDirector.js~WindowBuilderFilePropertiesDirector.html">WindowBuilderFilePropertiesDirector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilderTXTDirector.js~WindowBuilderTXTDirector.html">WindowBuilderTXTDirector</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers-widgets">Viewers/widgets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/Highlight.js~Highlight.html">Highlight</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/ModuleBase.js~ModuleBase.html">ModuleBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/PanelCreator.js~PanelCreator.html">PanelCreator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/RenamingModule.js~RenamingModule.html">RenamingModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/TaskbarModule.js~TaskbarModule.html">TaskbarModule</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/Utilis/Logger.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import FunctionsFrontend from &quot;./FunctionsFrontend.js&quot;;
+
+export default class Logger {
+	
+	
+	 /**
+   * creates a instance of Logger.
+   */
+	constructor(name) {
+			/**
+		 * Logged actions.
+		 * @type {Array} 
+		 * @public
+		 */
+		this.logActions = [];
+		this.setName(name);
+	}
+	
+	/**
+   * Sets name.
+	* @param {string} name - name.
+   * @returns {void}
+   */	
+	setName(name) {
+			/**
+		 * User for which actions are logged.
+		 * @type {Array} 
+		 * @public
+		 */
+		this.user_name = name;
+	}
+
+	/**
+   * Push raw log record.
+	* @param {string} text - record.
+   * @returns {string} - formated record.
+   */
+	push_raw(text) {
+		
+		this.logActions.push(FunctionsFrontend.getTimeATMForLogRecord() + &quot; | FRONTEND: &quot; + text);
+		return text + &quot;.&quot;;
+	}
+	
+
+		/**
+   * Push log record.
+	* @param {boolean} isFrontend - is front or back end record.
+	* @param {string} what - file on which action happend.
+	* @param {string} action - which action happend.
+   * @returns {string} - formated record.
+   */
+	push(isFrontend, what, action) {
+		var formated
+		if (isFrontend)
+			formated = Logger.formatFrontendRecord(what, action)
+		else 
+			formated = Logger.formatBackendRecord(what)
+		this.logActions.push(formated);
+		return formated;
+	}
+	
+		/**
+   * Format log record.
+	* @param {string} text - log record.
+	 * @returns {string} - formated record.
+   */
+	static 
+	formatBackendRecord(text) {
+		
+		
+		if ( text.startsWith(&quot;Error&quot;) ) 
+			text = text.substring(&quot;Error: &quot;.length);
+		else if ( text.startsWith(&quot;Successful&quot;) )
+			text = text.substring(&quot;Successful: &quot;.length);
+			
+		
+		return FunctionsFrontend.getTimeATMForLogRecord() + &quot; | BACKEND: &quot; + text + &quot;.&quot;;
+		
+	}
+	/**
+   * Format log record for frontend.
+	* @param {string} file - file on which action happend.
+	* @param {string} action - which action happend.
+   * @returns {string} - formated record.
+   */
+	static 
+	formatFrontendRecord(file, action) {
+		
+		
+		return FunctionsFrontend.getTimeATMForLogRecord() + &quot; | FRONTEND: File [&quot;+file+&quot;] is &quot; + action + &quot;.&quot;;
+		
+		
+	}
+			/**
+   * Returns array of log records.
+  * @returns {Array} - generated array of log records.
+   */
+	generate_array_of_strings() {
+		
+		
+							
+		var array_result = [];
+		
+		array_result.push(FunctionsFrontend.getTimeATM());
+		array_result.push(&quot;&quot;);
+		array_result.push(&quot;&quot;);
+		array_result.push(&quot;Windows XP report for &apos;&quot; + this.user_name + &quot;&apos;&quot;);
+		array_result.push(&quot;&quot;);
+		
+		
+		array_result.push(&quot;Actions: &quot;);
+		
+		for (var i = 0; i &lt; this.logActions.length; ++i) {
+			
+				var record = this.logActions[i];
+				if (record.length &gt; 65) {
+					for (var j = 0; j &lt; record.length; j+=65) {
+							var start = j;
+							var end = Math.min(j+65, record.length);
+							array_result.push(record.substring(j, end));
+							
+						}
+						
+				} else {
+					array_result.push(record);
+				}
+		}
+		
+		return array_result;
+		
+	}
+	
+	
+}</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

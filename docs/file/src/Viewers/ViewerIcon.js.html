@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/Viewers/ViewerIcon.js</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers">Controllers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerFileBase.js~ControllerFileBase.html">ControllerFileBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerFileTXT.js~ControllerFileTXT.html">ControllerFileTXT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerPlatform.js~ControllerPlatform.html">ControllerPlatform</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerProperties.js~ControllerProperties.html">ControllerProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-jQuery">jQuery</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models">Models</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/File.js~File.html">File</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/FileProperties.js~FileProperties.html">FileProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/FileText.js~FileText.html">FileText</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utilis">Utilis</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/FunctionsFrontend.js~FunctionsFrontend.html">FunctionsFrontend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/Logger.js~Logger.html">Logger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/QueryController.js~QueryController.html">QueryController</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers">Viewers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerBase.js~ViewerBase.html">ViewerBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerIcon.js~ViewerIcon.html">ViewerIcon</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerPlatform.js~ViewerPlatform.html">ViewerPlatform</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerProperties.js~ViewerProperties.html">ViewerProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerTXT.js~ViewerTXT.html">ViewerTXT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerUtilis.js~ViewerUtilis.html">ViewerUtilis</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getZindex">getZindex</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-zIndex">zIndex</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers-builders">Viewers/Builders</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilder.js~WindowBuilder.html">WindowBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilderFilePropertiesDirector.js~WindowBuilderFilePropertiesDirector.html">WindowBuilderFilePropertiesDirector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilderTXTDirector.js~WindowBuilderTXTDirector.html">WindowBuilderTXTDirector</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers-widgets">Viewers/widgets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/Highlight.js~Highlight.html">Highlight</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/ModuleBase.js~ModuleBase.html">ModuleBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/PanelCreator.js~PanelCreator.html">PanelCreator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/RenamingModule.js~RenamingModule.html">RenamingModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/TaskbarModule.js~TaskbarModule.html">TaskbarModule</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/Viewers/ViewerIcon.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import ViewerUtilis from &apos;./ViewerUtilis.js&apos;;
+import ControllerFileTXT from &apos;../Controllers/ControllerFileTXT.js&apos;;
+import RenamingModule from &apos;./widgets/RenamingModule.js&apos;;
+import Highlight from &apos;./widgets/Highlight.js&apos;;
+import TaskbarModule from &apos;./widgets/TaskbarModule.js&apos;;
+
+
+export default class ViewerIcon {
+	
+	
+	/**
+	 *Creates an instance of ViewerIcon.
+	 * @param {ViewerPlatform} viewer_platform
+	 * @param {ControllerFileTXT} txt_controller
+	 * @param {integer} position_x
+	 * @param {integer} position_y
+	 */
+	constructor(viewer_platform, txt_controller, position_x, position_y) {
+			/**
+		 * Viewer platform.
+		 * @type {ViewerPlatform} 
+		 * @public
+		 */
+		this.viewer_as_arg = viewer_platform;
+			/**
+		 * Textual controller.
+		 * @type {ControllerFileTXT} 
+		 * @public
+		 */
+		this.txt_controller = txt_controller;
+			/**
+		 * Friend module: renaming module.
+		 * @type {RenamingModule} 
+		 * @public
+		 */
+		this.renamingModule = this.viewer_as_arg.getModule(&quot;renamingModule&quot;);
+		/**
+		 * Friend module: highlight module.
+		 * @type {Highlight} 
+		 * @public
+		 */
+		this.highlightModule = this.viewer_as_arg.getModule(&quot;highlightModule&quot;);
+		/**
+		 * Friend module: taskbar module.
+		 * @type {TaskbarModule} 
+		 * @public
+		 */
+		this.taskbarModule = this.viewer_as_arg.getModule(&quot;taskbarModule&quot;);
+		
+		/**
+		 * Dom of this viewer.
+		 * @type {DOM} 
+		 * @public
+		 */
+		this.dom = this.make_new_icon(txt_controller, position_x, position_y);
+		
+
+		/**
+		 * Timeout object for controlling icon double clicking.
+		 * @type {object} 
+		 * @public
+		 */
+		this.timeoutClick = {
+			clickedCounter: 0,
+			callback: null
+		};
+		
+		this.timeoutClick.callback = function() {
+				
+				
+				if ( this.timeoutClick.clickedCounter == 2 ) {
+					this.renamingModule.stopRenaming();				
+					this.txt_controller.show();
+				} 
+					
+				this.timeoutClick.clickedCounter = 0;
+				
+		}.bind(this);
+		
+	}
+
+
+	/**
+   * Returns dom that represent title of the icon.
+   * @returns {DOM}
+   */
+	getIconTitleDOM() {
+		return this.dom.getElementsByClassName(&quot;txt-icon-title&quot;)[0];
+	}
+	
+	
+	/**
+	 * Returns dom for the renaming field.
+	 * @returns {DOM}
+	 */
+	getRenameFieldDOM() {
+		return this.dom.getElementsByClassName(&quot;txt-icon-title-rename&quot;)[0];
+	}
+	
+
+	
+	/**
+	 * Returns textual controller.
+	 * @returns {ControllerFileTXT}
+	 */	
+	getController() {
+		return this.txt_controller;
+	}
+
+	
+
+	/**
+	 * Returns main viewer DOM.
+	 * @returns {DOM}
+	 */	
+	getDom() {
+		return this.dom;
+	}
+	
+
+	/**
+	 * Returns name of the icon.
+	 * @returns {string}
+	 */	
+	getName() {
+		return this.txt_controller.getName();
+	}
+	
+	
+	
+	/**
+	 * Makes new icon at position x and y.
+	* @param {ControllerFileTXT} txt_controller - Textual controller.
+	* @param {integer} x - position x axis.
+	* @param {integer} y - position y axis.
+	 * @returns {DOM}
+	 */	
+	make_new_icon(txt_controller, x, y) {
+	
+		
+		var icon_file = document.createElement(&quot;div&quot;);
+		icon_file.className = &quot;txt-icon&quot;;
+		icon_file.style.left = x + &quot;px&quot;;
+		icon_file.style.top = y + &quot;px&quot;;
+		
+		
+		
+		var icon = document.createElement(&quot;img&quot;);
+		icon.className = &quot;txt-icon-image&quot;;
+		if (txt_controller.getName() == &quot;config&quot;){
+			icon.src = ViewerUtilis.ICON_CONFIG_FILE;
+			icon_file.className += &quot; config-file&quot;
+		}
+		else
+			icon.src = ViewerUtilis.ICON_TXT_FILE;
+		
+		
+		
+		
+		var icon_txt = document.createElement(&quot;h4&quot;);
+		icon_txt.className = &quot;txt-icon-title&quot;;
+		icon_txt.innerHTML = txt_controller.getName();
+	
+		
+		
+		
+		var icon_txt_rename = document.createElement(&quot;input&quot;);
+		icon_txt_rename.className = &quot;txt-icon-title-rename&quot;;
+		icon_txt_rename.style.visibility = &quot;hidden&quot;;
+		icon_txt_rename.value = txt_controller.getName();
+		
+		
+		icon_txt_rename.addEventListener(&quot;click&quot;, function(e) {
+			
+			e.stopPropagation();
+			
+		}.bind(this),false);
+		
+		icon_txt_rename.addEventListener(&quot;keyup&quot;, function(e) {
+			
+			
+			
+			
+			  if (e.keyCode === 13) {
+				  
+				var old_name = this.txt_controller.getName();
+				 
+				var renameField = this.getRenameFieldDOM();
+				var new_name = renameField.value;
+				 //console.log(&quot;RENAME 13&quot;);
+				 //console.log(renameField);
+				this.rename(old_name, new_name);
+	 
+				  
+				e.preventDefault();
+				e.stopPropagation();
+			  }
+			
+		}.bind(this), false);
+		
+		
+		icon_file.appendChild(icon);
+		icon_file.appendChild(icon_txt);
+		icon_file.appendChild(icon_txt_rename);
+		
+		icon_file.addEventListener(&quot;click&quot;, function(e) {
+			
+			var viewer_as_arg = this.viewer_as_arg;
+			
+			this.viewer_as_arg.resetModules();
+			this.highlightModule.highlightIcon(icon_file, true);
+			
+			if ( this.timeoutClick.clickedCounter == 0 ) {
+				this.timeoutClick.clickedCounter+=1;
+				setTimeout(this.timeoutClick.callback,200);			
+			} else {
+				if(this.timeoutClick.clickedCounter &lt; 2){
+					this.timeoutClick.clickedCounter += 1;
+				}
+			}
+			
+		
+			
+			
+			
+			
+			e.stopPropagation();
+			
+		}.bind(this),false);
+		
+		icon_file.addEventListener(&quot;contextmenu&quot;, function(e) {
+			
+			var viewer_as_arg = this.viewer_as_arg;
+			
+			this.viewer_as_arg.resetModules();
+			//this.highlightModule.reset();
+			//this.highlightModule.highlightIcon(icon_file, true);
+			
+			var module = viewer_as_arg.getModule(&quot;rightMouseClickModule&quot;);
+			
+			if ( !module ){
+			
+				console.log(&quot;no module&quot;);
+				return;
+			}
+			
+			if ( module.checkDependency() == false ){
+				console.log(&quot;checkDependency false&quot;);
+				return;
+			}
+			
+			module.hide_hud_panel();
+			module.resetOtherModules();
+			module.show_icon_panel(e.clientX+&quot;px&quot;, e.clientY+&quot;px&quot;);
+			
+			//viewer_as_arg.setSelectedIcon({ controller: txt_controller, icon: icon_file});
+			viewer_as_arg.setSelectedIcon(this);
+			
+			
+			e.preventDefault();
+			e.stopPropagation();
+			
+		}.bind(this), false);
+		
+		
+		var viewer_as_arg = this.viewer_as_arg;
+		var highlightModule = this.highlightModule;
+		
+		jQuery(function() {
+			 jQuery( icon_file ).draggable({
+				start: function(event,ui) {
+					
+					viewer_as_arg.resetModules();
+					highlightModule.highlightIcon(icon_file, true);
+					
+				},
+				stop: function(event, ui) {
+					
+					//viewer_as_arg.icon_file_click_twice = false;
+				
+				}
+			});
+		});
+		
+		return icon_file;
+	}
+	
+
+	
+	
+	/**
+	 * Renaming stop action.
+	 * @returns {void}
+	 */	
+	stopRenaming() {
+		
+		var old_name = this.txt_controller.getName();
+		 
+		var renameField = this.getRenameFieldDOM();
+		var new_name = renameField.value;
+		this.rename(old_name, new_name);
+			
+	}
+	
+
+		
+	/**
+	 * Renames icon with new name.
+	* @param {string} old_name - old name.
+	* @param {string} new_name - new name.
+	 * @returns {void}
+	 */	
+	rename(old_name, new_name) {
+		old_name =  old_name.trim();
+		new_name =  new_name.trim();
+		
+		
+		 if (old_name.localeCompare(new_name) != 0 
+					 &amp;&amp; !this.viewer_as_arg.iconExists(new_name)) {	
+					 
+				this.txt_controller.rename(new_name);
+				this.viewer_as_arg.renameIcon(old_name, new_name);
+					 
+		 } else {
+				this.getRenameFieldDOM().value = old_name;
+		 }
+	
+		this.renamingModule.setActive(false, null);
+		this.switchTitleAndRenamingField()
+		 
+							 
+	}
+	
+	
+	
+
+	/**
+	 * Toggles title field and renaming field.
+	 * @returns {void}
+	 */	
+	switchTitleAndRenamingField(){
+		
+		var icon_title_dom = this.getIconTitleDOM();
+		var icon_rename_field_dom = this.getRenameFieldDOM();
+		
+		icon_rename_field_dom.innerHTML = this.txt_controller.getName();
+		icon_title_dom.innerHTML = this.txt_controller.getName();
+		
+		if (icon_title_dom.style.visibility == &quot;visible&quot; || icon_title_dom.style.visibility == &quot;&quot;) {
+		
+			icon_title_dom.style.visibility = &quot;hidden&quot;;
+			icon_rename_field_dom.style.visibility = &quot;visible&quot;;
+			
+		} else {	  
+		
+			icon_rename_field_dom.style.visibility = &quot;hidden&quot;;
+			icon_title_dom.style.visibility = &quot;visible&quot;;
+			
+		}
+		
+	}
+	
+}</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

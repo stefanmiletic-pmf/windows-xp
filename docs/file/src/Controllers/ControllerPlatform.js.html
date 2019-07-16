@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/Controllers/ControllerPlatform.js</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers">Controllers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerFileBase.js~ControllerFileBase.html">ControllerFileBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerFileTXT.js~ControllerFileTXT.html">ControllerFileTXT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerPlatform.js~ControllerPlatform.html">ControllerPlatform</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerProperties.js~ControllerProperties.html">ControllerProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-jQuery">jQuery</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models">Models</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/File.js~File.html">File</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/FileProperties.js~FileProperties.html">FileProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/FileText.js~FileText.html">FileText</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utilis">Utilis</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/FunctionsFrontend.js~FunctionsFrontend.html">FunctionsFrontend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/Logger.js~Logger.html">Logger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/QueryController.js~QueryController.html">QueryController</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers">Viewers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerBase.js~ViewerBase.html">ViewerBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerIcon.js~ViewerIcon.html">ViewerIcon</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerPlatform.js~ViewerPlatform.html">ViewerPlatform</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerProperties.js~ViewerProperties.html">ViewerProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerTXT.js~ViewerTXT.html">ViewerTXT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerUtilis.js~ViewerUtilis.html">ViewerUtilis</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getZindex">getZindex</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-zIndex">zIndex</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers-builders">Viewers/Builders</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilder.js~WindowBuilder.html">WindowBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilderFilePropertiesDirector.js~WindowBuilderFilePropertiesDirector.html">WindowBuilderFilePropertiesDirector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilderTXTDirector.js~WindowBuilderTXTDirector.html">WindowBuilderTXTDirector</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers-widgets">Viewers/widgets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/Highlight.js~Highlight.html">Highlight</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/ModuleBase.js~ModuleBase.html">ModuleBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/PanelCreator.js~PanelCreator.html">PanelCreator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/RenamingModule.js~RenamingModule.html">RenamingModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/TaskbarModule.js~TaskbarModule.html">TaskbarModule</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/Controllers/ControllerPlatform.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import ViewerPlatform from &quot;../Viewers/ViewerPlatform.js&quot;;
+import ViewerUtilis from &quot;../Viewers/ViewerUtilis.js&quot;;
+import ControllerFileTXT from &quot;./ControllerFileTXT.js&quot;;
+import FunctionsFrontend from &quot;../Utilis/FunctionsFrontend.js&quot;;
+import QueryController from &quot;../Utilis/QueryController.js&quot;;
+import Logger from &quot;../Utilis/Logger.js&quot;;
+import ControllerFileBase from &quot;./ControllerFileBase.js&quot;;
+
+export var jQuery = $;
+export default class ControllerPlatform {
+	
+	
+	/**
+   * Creates an instance of ControllerPlatform.
+   */
+	constructor() {	
+	
+		  /**File controllers.
+			 * @type {object}
+			 * @public
+		 */
+		this.controllers = {};	
+		
+		/**
+		 * System viewer.
+		 * @type {ViewerPlatform}.
+		 * @public
+		 */
+		this.viewer = null;
+			
+		/**User id.
+		 * @type {integer}
+		 * @public
+		 */
+		this.user_id = null;
+		/**User name.
+		 * @type {string}
+		 * @public
+		 */
+		this.user_name = null;
+		/**User privilege.
+		 * @type {string}
+		 * @public
+		 */
+		this.user_priv = null;
+
+		/**
+		   * System logger.
+		 * @type {Logger}.
+		 * @public
+		 */
+		this.logger = null;
+		
+		this.initUserAndPlatform();
+		
+		
+	}
+
+	/**
+	 * Init system logger.
+	 * @param {string} name - Logger name.
+	 * @returns {void} 
+	 */
+	setLogger(name) {
+
+		  
+		this.logger = new Logger(name);
+
+	}
+
+	/**
+	 * Init user and platform.
+	 * @returns {void} 
+	 */
+	initUserAndPlatform() {
+		
+			 
+		var callback_success = function(responseText) {
+			
+			var response = JSON.parse(responseText)[0];
+			
+			
+			
+			this.user_id = response[&quot;id&quot;];
+			this.user_name = response[&quot;name&quot;];
+			this.user_priv = response[&quot;priv&quot;];
+			
+			this.setLogger(this.user_name);
+			
+			console.log(
+				this.logger.push_raw(&quot;User &apos;&quot;+ this.user_name + &quot;&apos; logged in&quot;)
+			);
+			this.initPlatform()	
+		
+			
+			
+		}.bind(this);
+		
+		var callback_error =ViewerUtilis.showBSOD;
+		
+		
+		QueryController.executeQuery({&quot;ID&quot;: true}, callback_success, callback_error);
+	}
+
+	/**
+	 * Setup platform viewer and modules.
+	 * @returns {void} 
+	 */
+	initPlatform() {
+		
+				this.viewer = new ViewerPlatform(this);
+				this.viewer.loadAvailableModules();
+				
+				this.fetchAllFiles();
+	}
+	
+	
+	/**
+   * Fetch all files from the server and make controllers.
+   * @returns {void} 
+   */
+	fetchAllFiles() {
+		
+		
+			
+		var callback_success = function(response) {
+			
+			var next_number_for_untitled_file = -1;
+			
+			
+			
+			var response = JSON.parse(response);
+			
+			
+			console.log(
+				this.logger.push(false, &quot;&quot;+ response.length + &quot; files fetched&quot;)
+			);
+			
+			
+			for ( var i=0; i &lt; response.length; ++i) {
+				
+				
+				var node = response[i];
+				var txt = node[&quot;txt&quot;];
+		
+				var info = {
+					name: node[&quot;name&quot;],
+					sizeInBits: node[&quot;sizeInBits&quot;],
+					sizeOnDiskInBits: node[&quot;sizeOnDiskInBits&quot;],
+					createdTimestamp: node[&quot;createdTimestamp&quot;],
+					createdByName: node[&quot;createdByName&quot;],
+					type: ViewerUtilis.CONST_FILE_TEXT
+				};
+		
+				var cntr = this.createNewFile(info,  false);
+				cntr.initContent(txt);
+				this.viewer.makeIconAndShow(info[&quot;name&quot;], cntr);
+				
+				
+				var number = 0;
+				if ( info[&quot;name&quot;].startsWith(&quot;Untitled text&quot;) ){
+					var number = parseInt( info[&quot;name&quot;].substring(&quot;Untitled text&quot;.length+1));
+					if (number &gt; next_number_for_untitled_file)
+						next_number_for_untitled_file = number;
+					
+				}
+				
+
+				
+				
+				
+			}
+			
+			this.viewer.setUntitledCounter(next_number_for_untitled_file+1);
+			
+			
+		}.bind(this);
+		
+		var callback_error =ViewerUtilis.showBSOD;
+		
+		
+		
+		QueryController.executeQuery({&quot;allFiles&quot;: true}, callback_success, callback_error);
+		
+		
+	}
+	
+	/**
+   * Creates new file controller.
+   * @param {object} info - Details about new file controller.
+   * @param {boolean} notExistedBefore - If file not existed in database set to true.
+   * @returns {ControllerFileBase} 
+   */
+	createNewFile(info, notExistedBefore) {
+		
+		var name = info[&quot;name&quot;]
+		var sizeInBits = info[&quot;sizeInBits&quot;]
+		var sizeOnDiskInBits = info[&quot;sizeOnDiskInBits&quot;]
+		var createdTimestamp = info[&quot;createdTimestamp&quot;]
+		var createdByName = info[&quot;createdByName&quot;]
+		var type = info[&quot;type&quot;]
+		
+					
+		if (notExistedBefore == true) {
+			
+			console.log(
+				this.logger.push(true, name, &quot;created&quot;)
+			);
+		
+			
+			var callback_success = this.const_callback_success.bind(this);
+			var callback_error =  this.const_callback_error.bind(this);
+			
+			QueryController.executeQuery({&quot;newFile&quot;:name, &quot;createdTimestamp&quot;:createdTimestamp}, callback_success, callback_error);
+			
+			
+			
+		}
+		
+		switch(type) {
+			
+
+			case ViewerUtilis.CONST_FILE_TEXT:
+			
+				var infoExtra = {
+						name: name,
+						type: ViewerUtilis.CONST_FILE_TEXT,
+						opens_with: ViewerUtilis.NOTEPAD_APPLICATION,
+						location: &quot;C:\/&quot;+createdByName,
+						size: sizeInBits,
+						size_on_disk: sizeOnDiskInBits,
+						created: createdTimestamp
+					
+				};
+			
+				 var new_file = new ControllerFileTXT(name, this);
+				 new_file.initPropertiesController(infoExtra);
+				 this.controllers[name] = new_file;
+				 return new_file;
+				
+			default:
+				return;
+			
+		}
+		
+	}
+	
+	/**
+	 * Server query action: rename file controller.
+	 * @param {string} oldName - Old name of the file controller.
+	 * @param {string} newName - New name of the file controller.
+	 * @returns {void} 
+	 */
+	renameFile(oldName, newName) {
+		
+			console.log(
+				this.logger.push(true, oldName, &quot;renamed to [&quot;+newName+&quot;]&quot;)
+			);
+		
+		
+			var callback_success = this.const_callback_success.bind(this);
+			var callback_error =  this.const_callback_error.bind(this);
+			
+			
+			QueryController.executeQuery({&quot;renameFile&quot;:oldName, &quot;newFileName&quot;: newName}, callback_success, callback_error);
+			
+		
+	}
+	/**
+	 * Standard response to successful query.
+	 * @param {string} response - Response from the server.
+	 * @returns {void} 
+	 */
+	const_callback_success(response) {
+
+			console.log(
+				this.logger.push(false, response)
+			);	
+			
+	}	
+	/**
+	* Standard response to unsuccessful query.
+	* @param {string} response - Response from the server.
+	* @returns {void} 
+	*/	
+	const_callback_error(response) {
+
+			console.log(
+				this.logger.push(false, response)
+			);	
+			this.viewer.showError(response);
+	}		
+	
+		
+	/**
+	* Server query action: update file content.
+	* @param {ControllerFileTXT} file_controller - file controller.
+	* @returns {void} 
+	*/
+	
+	updateContent(file_controller) {
+		
+		console.log(
+			this.logger.push(true, file_controller.getName(), &quot;edited&quot;)
+		);
+		
+		var callback_success = this.const_callback_success.bind(this);
+		var callback_error =  this.const_callback_error.bind(this);
+			
+		QueryController.executeQuery({&quot;changeFile&quot;: file_controller.getName(), &quot;content&quot;:file_controller.getModelContent()}, callback_success, callback_error);
+		
+		
+	}
+	
+
+	
+	
+	/**
+	* Server query action: delete file.
+	* @param {ControllerFileTXT} file_controller - file controller.
+	* @returns {void} 
+	*/
+	deleteFile(file_controller) {
+		
+		var callback_success = this.const_callback_success.bind(this);
+		var callback_error =  this.const_callback_error.bind(this);
+		
+		
+		QueryController.executeQuery({&quot;deleteFile&quot;: file_controller.getName()}, callback_success, callback_error);
+		
+		
+			
+			
+		delete this.controllers[file_controller.getName()];
+			
+		console.log(
+			this.logger.push(true, file_controller.getName(), &quot;deleted&quot;)
+		);
+		
+		
+	}
+	
+
+
+	/**
+	* Frontend action: show file viewer.
+	* @param {ControllerFileBase} file_controller - file controller.
+	* @returns {void} 
+	*/
+	
+	show(file_controller) {
+		
+		if ( file_controller.getViewer() == null ){
+			this.viewer.show(file_controller);
+			console.log(
+				this.logger.push(true, file_controller.getName(), &quot;opened&quot;)
+			);	
+			
+		}
+		
+		
+		
+		
+	}
+	
+	/**
+	* Frontend action: remove file viewer.
+	* @param {ControllerFileBase} file_controller - file controller.
+	* @returns {void} 
+	*/
+	removeView(file_controller) {
+		
+		console.log(
+			this.logger.push(true, file_controller.getName(), &quot;closed&quot;)
+		);
+		
+		this.viewer.removeView(file_controller);
+	}
+	
+
+
+
+
+
+
+
+	/**
+	* Logs off user and redirects user to the login page.
+	* @returns {void} 
+	*/
+	logOff() {
+		
+		var callback_success = function() {	
+			window.open(&quot;./login/login.php&quot;, &quot;_self&quot;);
+		}.bind(this);
+		
+		QueryController.executeQuery({&quot;logout&quot;: true}, callback_success);
+	
+	}
+	
+	
+
+
+	/**
+	* Logs system error.
+	* @param {string} desc - record description.
+	* @returns {void} 
+	*/
+	logSystemError(desc) {
+	
+		
+			console.log(
+				this.logger.push_raw( &quot;(SYSTEM)Error: &quot; + desc + &quot; at &quot; + FunctionsFrontend.getTimeATM() + &quot;.&quot; )
+			);
+		
+
+	}
+	
+	
+	
+}
+
+
+
+var WINDOWS_C = new ControllerPlatform();
+
+
+    
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

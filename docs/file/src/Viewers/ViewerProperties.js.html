@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/Viewers/ViewerProperties.js</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers">Controllers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerFileBase.js~ControllerFileBase.html">ControllerFileBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerFileTXT.js~ControllerFileTXT.html">ControllerFileTXT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerPlatform.js~ControllerPlatform.html">ControllerPlatform</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerProperties.js~ControllerProperties.html">ControllerProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-jQuery">jQuery</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models">Models</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/File.js~File.html">File</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/FileProperties.js~FileProperties.html">FileProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/FileText.js~FileText.html">FileText</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utilis">Utilis</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/FunctionsFrontend.js~FunctionsFrontend.html">FunctionsFrontend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/Logger.js~Logger.html">Logger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/QueryController.js~QueryController.html">QueryController</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers">Viewers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerBase.js~ViewerBase.html">ViewerBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerIcon.js~ViewerIcon.html">ViewerIcon</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerPlatform.js~ViewerPlatform.html">ViewerPlatform</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerProperties.js~ViewerProperties.html">ViewerProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerTXT.js~ViewerTXT.html">ViewerTXT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerUtilis.js~ViewerUtilis.html">ViewerUtilis</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getZindex">getZindex</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-zIndex">zIndex</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers-builders">Viewers/Builders</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilder.js~WindowBuilder.html">WindowBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilderFilePropertiesDirector.js~WindowBuilderFilePropertiesDirector.html">WindowBuilderFilePropertiesDirector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilderTXTDirector.js~WindowBuilderTXTDirector.html">WindowBuilderTXTDirector</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers-widgets">Viewers/widgets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/Highlight.js~Highlight.html">Highlight</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/ModuleBase.js~ModuleBase.html">ModuleBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/PanelCreator.js~PanelCreator.html">PanelCreator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/RenamingModule.js~RenamingModule.html">RenamingModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/TaskbarModule.js~TaskbarModule.html">TaskbarModule</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/Viewers/ViewerProperties.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import ViewerBase from &apos;./ViewerBase.js&apos;;
+import ViewerUtilis from &apos;./ViewerUtilis.js&apos;;
+import WindowBuilderFilePropertiesDirector from &apos;./Builders/WindowBuilderFilePropertiesDirector.js&apos;;
+import ControllerFileBase from &apos;../Controllers/ControllerFileBase.js&apos;;
+
+export default class ViewerProperties extends ViewerBase{
+	
+	
+	/**
+	 *Creates an instance of ViewerProperties.
+	 * @param {ControllerProperties} file_controller
+	 * @param {string} user_priv
+	 * @param {object} modules
+	 * @param {integer} posX
+	 * @param {integer} posY
+	 * @param {integer} sizeX
+	 * @param {integer} sizeY
+	 */
+	constructor(file_controller, user_priv, modules, posX, posY, sizeX, sizeY) {
+		
+		super(WindowBuilderFilePropertiesDirector, file_controller,  user_priv,modules, posX, posY, sizeX, sizeY);
+		
+		
+		
+		this.setupBodyforDetailsPreview(user_priv);
+		
+	}
+	/**
+	 * Setups body for showing file details.
+	 * @param {string} user_priv - user privilege.
+	 * @returns {void}
+	 */
+	setupBodyforDetailsPreview(user_priv) {
+		
+		console.log(this.file_controller);
+		var type = ViewerUtilis.getExtension(this.file_controller.getFileType());
+		
+
+		var generalDiv = document.createElement(&quot;div&quot;);
+		generalDiv.className = &quot;generalDiv&quot;;
+		generalDiv.innerHTML = &quot;General&quot;;
+
+		var preview = document.createElement(&quot;div&quot;);
+		preview.className = &quot;general-preview&quot;;
+		
+		var firstRow = document.createElement(&quot;div&quot;);
+		firstRow.className = &quot;row firstRow&quot;;
+		
+		var firstRowIcon = document.createElement(&quot;img&quot;);
+		firstRowIcon.className = &quot;firstRowIcon&quot;;
+		firstRowIcon.src = ViewerUtilis.ICON_TXT_FILE;
+		
+		var firstRowTitle = document.createElement(&quot;div&quot;);
+		firstRowTitle.className = &quot;firstRowTitle&quot;;
+		firstRowTitle.innerHTML = this.file_controller.getFileName() + &quot;.&quot; + type;
+		
+		firstRow.appendChild(firstRowIcon);
+		firstRow.appendChild(firstRowTitle);
+		
+		
+		var secondRow = document.createElement(&quot;div&quot;);
+		secondRow.className = &quot;row secondRow&quot;;
+		
+
+		var secondRowTypeOfFile = document.createElement(&quot;div&quot;);
+		secondRowTypeOfFile.className = &quot;secondRowTypeOfFile&quot;;
+		
+		var secondRowTypeOfFileLabel = document.createElement(&quot;div&quot;);
+		secondRowTypeOfFileLabel.className = &quot;label secondRowTypeOfFileLabel&quot;;
+		secondRowTypeOfFileLabel.innerHTML = &quot;Type of file:&quot;;
+
+		var secondRowTypeOfFileTitle = document.createElement(&quot;div&quot;);
+		secondRowTypeOfFileTitle.className = &quot;secondRowTypeOfFileTitle&quot;;
+		secondRowTypeOfFileTitle.innerHTML = type.toUpperCase() + &quot; File&quot;;
+		
+		
+		secondRowTypeOfFile.appendChild(secondRowTypeOfFileLabel);
+		secondRowTypeOfFile.appendChild(secondRowTypeOfFileTitle);
+		
+
+
+		
+
+		var secondRowOpensWith = document.createElement(&quot;div&quot;);
+		secondRowOpensWith.className = &quot;secondRowOpensWith&quot;;
+
+		var secondRowOpensWithLabel = document.createElement(&quot;div&quot;);
+		secondRowOpensWithLabel.className = &quot;label secondRowOpensWithLabel&quot;;
+		secondRowOpensWithLabel.innerHTML = &quot;Opens with:&quot;;
+
+
+		var secondRowOpensWithIcon = document.createElement(&quot;img&quot;);
+		secondRowOpensWithIcon.className = &quot;secondRowOpensWithIcon&quot;;
+		secondRowOpensWithIcon.src = ViewerUtilis.ICON_TXT_FILE;
+
+		var secondRowOpensWithTitle = document.createElement(&quot;div&quot;);
+		secondRowOpensWithTitle.className = &quot;secondRowOpensWithTitle&quot;;
+		secondRowOpensWithTitle.innerHTML = &quot;Notepad&quot;;
+		
+
+
+		secondRowOpensWith.appendChild(secondRowOpensWithLabel);
+		secondRowOpensWith.appendChild(secondRowOpensWithIcon);
+		secondRowOpensWith.appendChild(secondRowOpensWithTitle);
+		
+
+
+		secondRow.appendChild(secondRowTypeOfFile);
+		secondRow.appendChild(secondRowOpensWith);
+
+
+
+		
+		
+		var thirdRow = document.createElement(&quot;div&quot;);
+		thirdRow.className = &quot;row thirdRow&quot;;
+		
+		
+		var thirdRowLocationDiv = document.createElement(&quot;div&quot;);
+		thirdRowLocationDiv.className = &quot;thirdRowLocationDiv&quot;;
+		
+		var thirdRowLocationLabel = document.createElement(&quot;div&quot;);
+		thirdRowLocationLabel.className = &quot;label thirdRowLocationLabel&quot;;
+		thirdRowLocationLabel.innerHTML = &quot;Location:&quot;;
+		
+		var thirdRowLocationTitle = document.createElement(&quot;div&quot;);
+		thirdRowLocationTitle.className = &quot;thirdRowLocationTitle&quot;;
+		thirdRowLocationTitle.innerHTML = this.file_controller.getLocation();
+		
+		thirdRowLocationDiv.appendChild(thirdRowLocationLabel);
+		thirdRowLocationDiv.appendChild(thirdRowLocationTitle);
+
+		
+
+
+		
+		var thirdRowSizeDiv = document.createElement(&quot;div&quot;);
+		thirdRowSizeDiv.className = &quot;thirdRowSizeDiv&quot;;
+
+		var thirdRowSizeLabel = document.createElement(&quot;div&quot;);
+		thirdRowSizeLabel.className = &quot;label thirdRowSizeLabel&quot;;
+		thirdRowSizeLabel.innerHTML = &quot;Size:&quot;;
+		
+		var thirdRowSizeTitle = document.createElement(&quot;div&quot;);
+		thirdRowSizeTitle.className = &quot;thirdRowSizeTitle&quot;;
+		thirdRowSizeTitle.innerHTML = this.file_controller.getSize();
+		
+		thirdRowSizeDiv.appendChild(thirdRowSizeLabel);
+		thirdRowSizeDiv.appendChild(thirdRowSizeTitle);
+
+
+
+		var thirdRowSizeOnDiskDiv = document.createElement(&quot;div&quot;);
+		thirdRowSizeOnDiskDiv.className = &quot;thirdRowSizeOnDiskDiv&quot;;
+	
+		var thirdRowSizeOnDiskLabel = document.createElement(&quot;div&quot;);
+		thirdRowSizeOnDiskLabel.className = &quot;label thirdRowSizeOnDiskLabel&quot;;
+		thirdRowSizeOnDiskLabel.innerHTML = &quot;Size on disk:&quot;;
+
+		var thirdRowSizeOnDiskTitle = document.createElement(&quot;div&quot;);
+		thirdRowSizeOnDiskTitle.className = &quot;thirdRowSizeOnDiskTitle&quot;;
+		thirdRowSizeOnDiskTitle.innerHTML = this.file_controller.getSizeOnDisk();
+		
+
+		thirdRowSizeOnDiskDiv.appendChild(thirdRowSizeOnDiskLabel);
+		thirdRowSizeOnDiskDiv.appendChild(thirdRowSizeOnDiskTitle);
+
+		thirdRow.appendChild(thirdRowLocationDiv);
+		thirdRow.appendChild(thirdRowSizeDiv);
+		thirdRow.appendChild(thirdRowSizeOnDiskDiv);
+		
+		
+		var fourthRow = document.createElement(&quot;div&quot;);
+		fourthRow.className = &quot;row fourthRow&quot;;
+		
+		
+
+
+		
+		var fourthRowCreatedDiv = document.createElement(&quot;div&quot;);
+		fourthRowCreatedDiv.className = &quot;fourthRowCreatedDiv&quot;;
+
+		var fourthRowCreatedLabel = document.createElement(&quot;div&quot;);
+		fourthRowCreatedLabel.className = &quot;label fourthRowCreatedLabel&quot;;
+		fourthRowCreatedLabel.innerHTML = &quot;Created:&quot;;
+		
+		
+		var fourthRowCreatedTitle = document.createElement(&quot;div&quot;);
+		fourthRowCreatedTitle.className = &quot;fourthRowCreatedTitle&quot;;
+		fourthRowCreatedTitle.innerHTML = this.file_controller.getCreated();
+		
+		
+		fourthRowCreatedDiv.appendChild(fourthRowCreatedLabel);
+		fourthRowCreatedDiv.appendChild(fourthRowCreatedTitle);
+
+		fourthRow.appendChild(fourthRowCreatedDiv);
+		
+		
+		
+		
+		var fifthRow = document.createElement(&quot;div&quot;);
+		fifthRow.className = &quot;row fifthRow&quot;;
+		
+	
+		
+		var fifthRowAttributes = document.createElement(&quot;div&quot;);
+		fifthRowAttributes.className = &quot;fifthRowAttributes&quot;;
+		
+		var fifthRowAttributesLabel = document.createElement(&quot;div&quot;);
+		fifthRowAttributesLabel.className = &quot;fifthRowAttributesLabel&quot;;
+		fifthRowAttributesLabel.innerHTML = &quot;Attributes:&quot;;
+		
+		
+		
+		var fifthRowReadOnlyBox = document.createElement(&quot;div&quot;);
+		fifthRowReadOnlyBox.className = &quot;fifthRowReadOnlyBox&quot;;
+		
+	
+		
+		if ( user_priv == &quot;guest&quot; ) {
+			var fifthRowReadOnlyBoxMarked = document.createElement(&quot;div&quot;);
+			fifthRowReadOnlyBoxMarked.className = &quot;fifthRowReadOnlyBoxMarked&quot;;
+			
+			fifthRowReadOnlyBox.appendChild(fifthRowReadOnlyBoxMarked);
+			
+		} 
+
+
+		
+		
+		var fifthRowReadOnlyBoxLabel = document.createElement(&quot;div&quot;);
+		fifthRowReadOnlyBoxLabel.className = &quot;fifthRowReadOnlyBoxLabel&quot;;
+		fifthRowReadOnlyBoxLabel.innerHTML = &quot;Read only&quot;;
+	
+		
+		fifthRowAttributes.appendChild(fifthRowAttributesLabel);
+		fifthRowAttributes.appendChild(fifthRowReadOnlyBoxLabel);
+		fifthRowAttributes.appendChild(fifthRowReadOnlyBox);
+		fifthRowAttributes.appendChild(fifthRowReadOnlyBoxLabel);
+		fifthRow.appendChild(fifthRowAttributes);
+		
+		
+		
+		preview.appendChild(generalDiv);
+		preview.appendChild(firstRow);
+		preview.appendChild(secondRow);
+		preview.appendChild(thirdRow);
+		preview.appendChild(fourthRow);
+		preview.appendChild(fifthRow);
+		this.domBody.appendChild(preview);
+		this.domBody.className += &quot; properties-details&quot;;
+		
+	}
+
+	
+}</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

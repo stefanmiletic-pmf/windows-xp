@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/Controllers/ControllerFileTXT.js</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers">Controllers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerFileBase.js~ControllerFileBase.html">ControllerFileBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerFileTXT.js~ControllerFileTXT.html">ControllerFileTXT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerPlatform.js~ControllerPlatform.html">ControllerPlatform</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerProperties.js~ControllerProperties.html">ControllerProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-jQuery">jQuery</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models">Models</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/File.js~File.html">File</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/FileProperties.js~FileProperties.html">FileProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/FileText.js~FileText.html">FileText</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utilis">Utilis</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/FunctionsFrontend.js~FunctionsFrontend.html">FunctionsFrontend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/Logger.js~Logger.html">Logger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/QueryController.js~QueryController.html">QueryController</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers">Viewers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerBase.js~ViewerBase.html">ViewerBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerIcon.js~ViewerIcon.html">ViewerIcon</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerPlatform.js~ViewerPlatform.html">ViewerPlatform</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerProperties.js~ViewerProperties.html">ViewerProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerTXT.js~ViewerTXT.html">ViewerTXT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerUtilis.js~ViewerUtilis.html">ViewerUtilis</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getZindex">getZindex</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-zIndex">zIndex</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers-builders">Viewers/Builders</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilder.js~WindowBuilder.html">WindowBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilderFilePropertiesDirector.js~WindowBuilderFilePropertiesDirector.html">WindowBuilderFilePropertiesDirector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilderTXTDirector.js~WindowBuilderTXTDirector.html">WindowBuilderTXTDirector</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers-widgets">Viewers/widgets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/Highlight.js~Highlight.html">Highlight</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/ModuleBase.js~ModuleBase.html">ModuleBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/PanelCreator.js~PanelCreator.html">PanelCreator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/RenamingModule.js~RenamingModule.html">RenamingModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/TaskbarModule.js~TaskbarModule.html">TaskbarModule</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/Controllers/ControllerFileTXT.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import ControllerProperties from &apos;./ControllerProperties.js&apos;;
+import ControllerPlatform from &apos;./ControllerPlatform.js&apos;;
+import ControllerFileBase from &apos;./ControllerFileBase.js&apos;;
+import FileText from &apos;../Models/FileText.js&apos;;
+import ViewerUtilis from &apos;../Viewers/ViewerUtilis.js&apos;;
+
+export default class ControllerFileTXT extends ControllerFileBase{
+	
+
+
+
+	/**
+   * Creates an instance of ControllerFileTXT.
+   */
+	constructor(name, parent_controller) {
+		
+		super(ViewerUtilis.CONST_FILE_TEXT, ViewerUtilis.CONST_FILE_TEXT,  new FileText(name)) 
+
+		  /**
+		   * Parent controller.
+		 * @type {ControllerPlatform}
+		 * @public
+		 */
+		this.parent_controller = parent_controller;
+		
+		
+		  /**
+		   * Controller properties.
+		 * @type {ControllerProperties}
+		 * @public
+		 */
+		this.cntr_properties = null;
+		
+		
+ 		
+	}
+	
+
+		
+	/**
+	 *
+	 *	Inits properties for this file controller.
+	 * @param {object} details
+	 * @returns {void} 
+	 */
+	initPropertiesController(details) {
+		
+		this.cntr_properties = new ControllerProperties(this, details, this.parent_controller.user_priv);
+	}
+	/**
+   * Calls remove view action for the properties controller on parent.
+   * @returns {void} 
+   */
+	removePropertiesView() {
+		this.parent_controller.removeView(this.cntr_properties);
+	}
+	
+	/**
+   * Calls show action for the properties controller on parent.
+   * @returns {void} 
+   */
+	showPropertiesView() {
+		
+		this.parent_controller.show(this.cntr_properties);
+	}
+
+		
+	/**
+   * Renames model and call rename action on parent.
+   *  @param {string} value - new name.
+   * @returns {void} 
+   */
+	
+	rename(value) {
+		
+		
+		
+			
+			
+		
+		var oldName = this.model.name;
+		var newName = value;
+		
+		this.model.name = value;
+		
+		this.cntr_properties.setName(newName);
+		
+		this.parent_controller.renameFile(oldName, newName);
+		
+		
+	}
+			
+	/**
+   * Calls show action on parent.
+   * @returns {void} 
+   */
+	show() {
+		
+		this.parent_controller.show(this);
+	}
+	
+
+
+	/**
+   * Returns content of the file.
+   * @returns {string} 
+   */
+	getModelContent() {
+		return this.model.content;		
+	}
+
+	/**
+   * Updates model, properties and call save action on parent.
+   * @returns {void} 
+   */
+	save() {	
+	
+	
+			var content = this.viewer.domBody.getElementsByClassName(&quot;body-txt&quot;)[0].value;
+			////console.log(&quot;content: &quot; +content);
+			
+			this.model.content = content;
+			
+			var size_in_bits = content.length * 8;
+			
+			this.cntr_properties.setSize(size_in_bits);
+			
+			this.parent_controller.updateContent(this);
+			
+			
+	}
+
+	/**
+   * Returns properties&apos;s controller.
+   * @returns {ControllerProperties} 
+   */
+	getFileProperties() {
+		
+		return this.cntr_properties;
+		
+	}
+
+	/**
+	 * Inits content.
+	 * @param {string} value - Content. 
+	 * @returns {void} 
+	 */
+	initContent(value) {
+		
+		
+		this.model.content = value;
+		
+	}
+
+	/**
+   * Calls delete file action on parent.
+   * @returns {void} 
+   */
+	deleteFile() {
+		
+		
+		this.parent_controller.deleteFile(this);
+		
+		
+	}
+		/**
+   * Calls remove view action on parent.
+   * @returns {void} 
+   */
+	removeView() {
+		
+		
+		this.parent_controller.removeView(this);
+		
+	}
+	
+}
+
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

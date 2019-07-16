@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">src/Viewers/widgets/Highlight.js</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers">Controllers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerFileBase.js~ControllerFileBase.html">ControllerFileBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerFileTXT.js~ControllerFileTXT.html">ControllerFileTXT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerPlatform.js~ControllerPlatform.html">ControllerPlatform</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerProperties.js~ControllerProperties.html">ControllerProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-jQuery">jQuery</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models">Models</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/File.js~File.html">File</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/FileProperties.js~FileProperties.html">FileProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/FileText.js~FileText.html">FileText</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utilis">Utilis</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/FunctionsFrontend.js~FunctionsFrontend.html">FunctionsFrontend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/Logger.js~Logger.html">Logger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/QueryController.js~QueryController.html">QueryController</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers">Viewers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerBase.js~ViewerBase.html">ViewerBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerIcon.js~ViewerIcon.html">ViewerIcon</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerPlatform.js~ViewerPlatform.html">ViewerPlatform</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerProperties.js~ViewerProperties.html">ViewerProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerTXT.js~ViewerTXT.html">ViewerTXT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerUtilis.js~ViewerUtilis.html">ViewerUtilis</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getZindex">getZindex</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-zIndex">zIndex</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers-builders">Viewers/Builders</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilder.js~WindowBuilder.html">WindowBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilderFilePropertiesDirector.js~WindowBuilderFilePropertiesDirector.html">WindowBuilderFilePropertiesDirector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilderTXTDirector.js~WindowBuilderTXTDirector.html">WindowBuilderTXTDirector</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers-widgets">Viewers/widgets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/Highlight.js~Highlight.html">Highlight</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/ModuleBase.js~ModuleBase.html">ModuleBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/PanelCreator.js~PanelCreator.html">PanelCreator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/RenamingModule.js~RenamingModule.html">RenamingModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/TaskbarModule.js~TaskbarModule.html">TaskbarModule</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/Viewers/widgets/Highlight.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import ViewerIcon from &quot;../ViewerIcon.js&quot;;
+import ModuleBase from &quot;./ModuleBase.js&quot;;
+
+export default class Highlight extends ModuleBase {
+	
+	
+	/**
+	 *Creates an instance of Highlight.
+	 * @param {*} params
+	 */
+	constructor(params) {
+		super(params.highlightModule.viewer_as_arg,
+		params.highlightModule.actionDependOn,
+		params.highlightModule.actionResetModules);
+			
+			var params = params[&quot;highlightModule&quot;];
+			
+			var callbacks = params[&quot;callbacks&quot;];
+			
+			/**
+			 * Get icons dictionary callback from viewer platform.
+			 * @type {dictionary} 
+			 * @public
+			 */
+			this.getIconsDictionary = callbacks[&quot;getIconsDictionary&quot;];
+			
+
+			
+			/**
+			 * Track active searched by click.
+			 * @type {ViewerIcon} 
+			 * @public
+			 */
+			this.activeSearchedByClick = null;
+		
+			/**
+			 * Track active searched by key.
+			 * @type {object} 
+			 * @public
+			 */
+			this.activeSearched = null;
+			
+
+			this.addHighlightFunctionality();
+	}
+	
+	
+	
+	/**
+	 * Returns activness of this module.
+	 * @returns {boolean}
+	 */	
+	isActive() {
+		return !!this.activeSearched;
+	}
+	
+
+	
+	/**
+	 * Resets this module.
+	 * @returns {void}
+	 */	
+	reset() {
+		if (this.activeSearched != null) {
+				
+				this.activeSearched.d.getDom().style.background =  &quot;none&quot;;		
+				this.activeSearched = null;
+			}
+			
+		if(this.activeSearchedByClick!= null) {
+			
+				this.activeSearchedByClick.style.background =  &quot;none&quot;;		
+				this.activeSearchedByClick = null;
+		}
+	}
+		
+	/*
+	
+		name: highlighIcon
+		description:
+			highlights argument icon
+		returns:
+			void
+	
+	*/
+
+		
+	/**
+	 * Highlights icon.
+	* @param {ViewerIcon} iconViewer - Viewer controller.
+	* @param {boolean} byClick - if higlight was made by click otherwise is by key.
+	 * @returns {void}
+	 */	
+	highlightIcon(iconViewer, byClick) {
+		
+		if (byClick) {
+			this.activeSearchedByClick = iconViewer;
+			var iconDom = iconViewer;
+			iconDom.style.background =  &quot;rgba(255, 255, 255, 0.45)&quot;;
+		} else 
+			iconViewer.getDom().style.background =  &quot;rgba(255, 255, 255, 0.45)&quot;;
+		
+	}
+
+
+		/**
+	 * Unhighlights icon highlighted by key.
+	* @param {ViewerIcon} iconViewer - Viewer controller.
+	 * @returns {void}
+	 */	
+	unHighlightIcon(iconViewer) {
+		
+		iconViewer.getDom().style.background =  &quot;none&quot;;
+		
+	}	
+	
+
+	
+	
+		/**
+	 * Adds highlight functionality to the viewer platform.
+	 * @returns {void}
+	 */	
+	addHighlightFunctionality() {
+		
+		document.addEventListener(&quot;keydown&quot;, function(e) {
+			
+			if ( this.checkDependency() == false )
+				return;
+			
+			this.resetOtherModules();
+			
+			if(this.activeSearchedByClick!= null) {
+			
+				this.activeSearchedByClick.style.background =  &quot;none&quot;;		
+				this.activeSearchedByClick = null;
+			}
+			
+			// if that key is Escape, simply unhighlight element and delete reference
+			if(e.key === &quot;Escape&quot;) {
+				this.reset();
+				return;
+			}
+			
+			
+			
+		
+			// first unhighlight active searched element but keep him in memory because...*
+			
+			if (this.activeSearched != null) {
+				this.unHighlightIcon(this.activeSearched.d);
+			}
+			
+				
+		
+			
+			// if key is alfanumeric key \w stands for,
+			// \s stands for
+			// | stands for
+			// /g stands for
+			if(String.fromCharCode(e.keyCode).match(/(\w|\s)/g)) {
+				
+				var found = false;
+				
+				// dictionary of icons
+				var dictionary = this.getIconsDictionary();
+				
+				var keys = Object.keys(dictionary);
+				
+				// get upper case Ascii representation
+				var str = String.fromCharCode(e.keyCode);
+				
+				
+				
+				var i = 0;
+				
+				// get the next one in dictionary
+				if (this.activeSearched != null) {
+					
+					if ( this.activeSearched.number+1 &lt;= keys.length ) {
+							i = this.activeSearched.number+1;
+					}
+					
+				}
+				
+					
+				var i_starts_with = i;
+				for (; i &lt; keys.length; ++i ) {
+					
+					var key = keys[i];
+				
+					if (key.toUpperCase().startsWith(str) ) {
+						
+						var viewerIcon = dictionary[key];
+						
+						this.highlightIcon(viewerIcon);
+						this.activeSearched = { k: key, d: viewerIcon, number: i};
+						found = true;
+						break;
+						
+					}
+					
+				}
+				
+				
+				if (!found &amp;&amp; i_starts_with != 0) {
+					
+					
+					for (var i = 0; i &lt; this.activeSearched.number; ++i ) {
+						var key = keys[i];
+					
+						
+						if (key.toUpperCase().startsWith(str) ) {
+							
+							
+							var viewerIcon = dictionary[key];
+							
+							this.highlightIcon(viewerIcon);
+							this.activeSearched = { k: key, d: viewerIcon, number: i};
+							
+							found = true;
+							break;
+							
+						}
+						
+					}
+					
+				}
+				
+				
+				
+				if (!found) 
+					this.activeSearched = null;
+					
+				
+				
+			}
+			
+			
+		
+			
+			
+		
+		}.bind(this), false);
+	}
+	
+	
+}</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

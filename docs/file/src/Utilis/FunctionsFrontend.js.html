@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/Utilis/FunctionsFrontend.js</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers">Controllers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerFileBase.js~ControllerFileBase.html">ControllerFileBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerFileTXT.js~ControllerFileTXT.html">ControllerFileTXT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerPlatform.js~ControllerPlatform.html">ControllerPlatform</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Controllers/ControllerProperties.js~ControllerProperties.html">ControllerProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-jQuery">jQuery</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models">Models</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/File.js~File.html">File</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/FileProperties.js~FileProperties.html">FileProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Models/FileText.js~FileText.html">FileText</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utilis">Utilis</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/FunctionsFrontend.js~FunctionsFrontend.html">FunctionsFrontend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/Logger.js~Logger.html">Logger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Utilis/QueryController.js~QueryController.html">QueryController</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers">Viewers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerBase.js~ViewerBase.html">ViewerBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerIcon.js~ViewerIcon.html">ViewerIcon</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerPlatform.js~ViewerPlatform.html">ViewerPlatform</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerProperties.js~ViewerProperties.html">ViewerProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerTXT.js~ViewerTXT.html">ViewerTXT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/ViewerUtilis.js~ViewerUtilis.html">ViewerUtilis</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getZindex">getZindex</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-zIndex">zIndex</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers-builders">Viewers/Builders</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilder.js~WindowBuilder.html">WindowBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilderFilePropertiesDirector.js~WindowBuilderFilePropertiesDirector.html">WindowBuilderFilePropertiesDirector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/Builders/WindowBuilderTXTDirector.js~WindowBuilderTXTDirector.html">WindowBuilderTXTDirector</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#viewers-widgets">Viewers/widgets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/Highlight.js~Highlight.html">Highlight</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/ModuleBase.js~ModuleBase.html">ModuleBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/PanelCreator.js~PanelCreator.html">PanelCreator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/RenamingModule.js~RenamingModule.html">RenamingModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Viewers/widgets/TaskbarModule.js~TaskbarModule.html">TaskbarModule</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/Utilis/FunctionsFrontend.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">export default class FunctionsFrontend {
+	
+
+	/**
+   * Returns time for the clock.
+   * @returns {string}
+   */
+	static getTimeATMForTheClock() {
+		
+		var today = new Date();
+			var hours =  String(today.getHours()).padStart(2, &apos;0&apos;);
+			var minutes =  String(today.getMinutes()).padStart(2, &apos;0&apos;);
+			
+			return hours + &quot;:&quot; + minutes;
+	}
+
+	
+	/**
+   * Returns time for the query record.
+   * @returns {string}
+   */
+	static getTimeATM() {
+		var today = new Date();
+			var dd = String(today.getDate()).padStart(2, &apos;0&apos;);
+			var mm = String(today.getMonth() + 1).padStart(2, &apos;0&apos;); //January is 0!
+			var yyyy = today.getFullYear();
+
+			var minutes =  String(today.getMinutes()).padStart(2, &apos;0&apos;);
+			var hours =  String(today.getHours()).padStart(2, &apos;0&apos;);
+
+			var time = dd + &apos;/&apos; + mm + &apos;/&apos; + yyyy + &quot;  &quot; +
+				+hours+&quot;:&quot; +minutes;
+				
+			return time;
+
+	}
+	
+
+	
+	/**
+   * Returns time for the log record.
+   * @returns {string}
+   */
+	static getTimeATMForLogRecord() {
+		
+		var today = new Date();
+
+			var seconds =  String(today.getSeconds()).padStart(2, &apos;0&apos;);
+			var minutes =  String(today.getMinutes()).padStart(2, &apos;0&apos;);
+			var hours =  String(today.getHours()).padStart(2, &apos;0&apos;);
+
+			var time = hours+&quot;:&quot; +minutes+&quot;:&quot;+seconds;
+				
+			return time;
+			
+	}
+	
+	/**
+   * Returns time for the system log record.
+   * @param {BitInt} timestamp - Record&apos;s timestamp.
+   * @returns {string}
+   */
+	static getTimeATMForSystemLogRecord(timestamp) {
+		var today = new Date();
+		today.setTime(timestamp);
+			var dd = String(today.getDate()).padStart(2, &apos;0&apos;);
+			var mm = String(today.getMonth() + 1).padStart(2, &apos;0&apos;); //January is 0!
+			var yyyy = today.getFullYear();
+			
+			
+			var seconds =  String(today.getSeconds()).padStart(2, &apos;0&apos;);
+			var minutes =  String(today.getMinutes()).padStart(2, &apos;0&apos;);
+			var hours =  String(today.getHours()).padStart(2, &apos;0&apos;);
+
+
+			var time = dd + &apos;/&apos; + mm + &apos;/&apos; + yyyy + &quot;  &quot; +
+				+hours+&quot;:&quot; +minutes+&quot;:&quot;+seconds;
+				
+			return time;
+			
+	}
+		
+	/**
+   * Returns time for the properties created field.
+   * @returns {string}
+   */
+	static getTimeATMformatProperties(timestamp) {
+		
+		var today = new Date();
+		today.setTime(timestamp);
+			var dd_unformatedINT = today.getDate();
+			var dd = String(today.getDate()).padStart(2, &apos;0&apos;);
+			
+			dd_unformatedINT = dd_unformatedINT%7;
+			var dayWord = &quot;&quot;;
+			switch(dd_unformatedINT) {
+				
+				case 1:
+					dayWord = &quot;Monday&quot;
+					break;
+				case 2:
+					dayWord = &quot;Thuesday&quot;;
+					break;
+				case 3:
+					dayWord = &quot;Wendesday&quot;;
+					break;
+				case 4:
+					dayWord = &quot;Thursday&quot;;
+					break;
+				case 5:
+					dayWord = &quot;Friday&quot;;
+					break;
+				case 6:
+					dayWord = &quot;Saturday&quot;;
+					break;
+				case 0:
+					dayWord = &quot;Sunday&quot;;
+					break;
+				
+			}
+			
+			var mm_unformatedINT = today.getMonth() + 1;
+			var mm = String(today.getMonth() + 1).padStart(2, &apos;0&apos;); //January is 0!
+			
+			var monthWord = &quot;&quot;;
+			switch(mm_unformatedINT) {
+				
+				case 1:
+					monthWord = &quot;January&quot;
+					break;
+				case 2:
+					monthWord = &quot;February&quot;;
+					break;
+				case 3:
+					monthWord = &quot;March&quot;;
+					break;
+				case 4:
+					monthWord = &quot;April&quot;;
+					break;
+				case 5:
+					monthWord = &quot;May&quot;;
+					break;
+				case 6:
+					monthWord = &quot;June&quot;;
+					break;
+				case 7:
+					monthWord = &quot;July&quot;;
+					break;
+				case 8:
+					monthWord = &quot;Avgust&quot;;
+					break;
+				case 9:
+					monthWord = &quot;September&quot;;
+					break;
+				case 10:
+					monthWord = &quot;October&quot;;
+					break;
+				case 11:
+					monthWord = &quot;November&quot;;
+					break;
+				case 12:
+					monthWord = &quot;December&quot;;
+					break;
+				
+			}
+			
+			
+			var yyyy = today.getFullYear();
+
+			var minutes =  String(today.getMinutes()).padStart(2, &apos;0&apos;);
+			var hours =  String(today.getHours()).padStart(2, &apos;0&apos;);
+			var seconds =  String(today.getSeconds()).padStart(2, &apos;0&apos;);
+
+			var dayHalf = &quot;AM&quot;;
+			if (hours &gt; 12)
+				dayHalf = &quot;PM&quot;;
+
+			var time = dayWord + &quot;, &quot; + monthWord + &quot; &quot; + dd + &quot;, &quot;+ yyyy + &quot;, &quot; +
+				+hours+&quot;:&quot; +minutes+&quot;:&quot;+seconds + &quot; &quot; + dayHalf;
+				
+			return time;
+		
+	}
+	
+		
+}</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
