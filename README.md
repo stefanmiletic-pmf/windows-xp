@@ -2,13 +2,14 @@
 Parcijalna replikacija windows xp-a
 
 
+
 Arhitektura:
 ![Alt text](arhitektura.png?raw=true "Title")
 
 
 *U docs folderu se nalazi dokumentacija.*
 
-Instalacija:
+### Instalacija:
 1. Uneti odovarajuci username i password za pristup serveru u fajlu ./php/functions.js na linijima 4 i 5.
 2. Kreirati tabelu "windowsxp" u bazi.
 3. Smestiti aplikaciju u odgovarajuci folder ( primer: "www/xp",...)
@@ -16,7 +17,7 @@ Instalacija:
 4. Pokrenuti aplikaciju localhost/xp/login/login.php (za generisanje pdf izvestaja potreban je internet)
 
 
-OPIS:
+### OPIS:
 Parcijalna replikacija Windows XP:
 Tri grupe korisnika: USER, ADMIN, GUEST dele jedan "kompjuter" zavisno od tipa korisnika, odgovarajuce dozvole imaju za rad sa fajlovima i administracijom korisnika.
 Korisceni alati i tehnologije:
