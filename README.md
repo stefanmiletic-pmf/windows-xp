@@ -13,7 +13,7 @@ Instalacija:
 2. Kreirati tabelu "windowsxp" u bazi.
 3. Smestiti aplikaciju u odgovarajuci folder ( primer: "www/xp",...)
 3. Otvoriti u pretrazivacu fajl localhost/xp/php/setup.php
-4. Pokrenuti aplikaciju localhost/xp/login/login.php
+4. Pokrenuti aplikaciju localhost/xp/login/login.php (za generisanje pdf izvestaja potreban je internet)
 
 
 OPIS:
