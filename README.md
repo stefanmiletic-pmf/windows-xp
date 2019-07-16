@@ -1,7 +1,8 @@
 # windows-xp
 Parcijalna replikacija windows xp-a
 
-
+Arhitektura:
+![Alt text](arhitektura.png?raw=true "Title")
 
 
 
