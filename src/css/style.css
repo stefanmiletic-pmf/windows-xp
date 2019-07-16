@@ -1,0 +1,775 @@
+* {
+	
+	margin: 0;
+	padding: 0;
+	
+}
+
+html {
+	
+	font: 12px/100% Arial, Helvetica, sans-serif;
+    cursor: default !important;
+	width:100%;
+	height:100%;
+	min-width: 700px;
+	min-height: 503px;
+	
+}
+
+
+
+body {
+  
+	
+	width:100%;
+	height:100%;
+	min-width: 700px;
+	min-height: 503px;
+	
+    color: #fff;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	
+	
+}
+
+
+
+.hud {
+	
+	width: 700px;
+	height: 480px;
+	
+	
+	position: absolute;
+	
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+	
+	background: url(../Utilis/images/background.jpg);
+    
+    background-size: 700px 480px;
+	overflow: hidden;
+	
+}
+
+.window-base {
+	
+	
+	
+	width: 60%;
+    background-color: #FFF;
+    margin: 0;
+    color: #000;
+    position: absolute !important;
+    z-index: 4;
+	
+	border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+	
+}
+
+.window-base-header {
+	
+	width: 100%;
+	height: 30px;
+	overflow: hidden;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+	background: url("../Utilis/images/header_bar.png");
+	
+}
+
+
+
+.header-left {
+	
+	width: 60%;
+	float: left;
+	
+}
+.file-properties .header-left {
+	width: 86% !important;
+}
+.file-properties .header-left h3 {
+	margin-left: 5px;
+}
+
+.header-left h3{
+	float: left;
+    height: 100%;
+    margin-top: 8px;
+	text-shadow: 1px 1px 1px #000;
+	font-size: 12px;
+	
+    color: #FFF;
+}
+
+.header-left img{
+	height: 20px;
+    float: left;
+    /* height: 100%; */
+    padding-left: 4px;
+    padding-top: 3px;
+}
+
+.header-panel-right {
+	float: right;
+	list-style-type: none;
+	
+	height: 24px;
+    margin-right: 4px;
+    margin-top: 4px;
+}
+
+.header-panel-right li {
+	display: inline-block;
+	width: 24px;
+    height: 22px;
+}
+.header-panel-right li div {
+	width: 100%;
+    height: 100%;
+    background: transparent url(../Utilis/images/window_buttons.png) no-repeat 0 0;
+}
+
+
+
+
+.header-panel-right-btn-exit {
+	
+    background-position: -53px -5px !important;
+}
+
+.header-panel-right-btn-exit:hover {
+	
+    background-position: -53px -95px  !important;
+}
+
+.header-panel-right-btn-min {
+	
+    background-position: -7px -5px !important;
+}
+.header-panel-right-btn-min:hover {
+	
+    background-position: -7px -35px !important;
+}
+.header-panel-right-btn-max {
+	
+    background-position: -30px -5px !important;
+}
+.header-panel-right-btn-max:hover {
+	
+    background-position: -30px -65px !important;
+}
+
+.window-body {
+	height: 300px;
+    border: 3px solid #0831D9;
+    border-top: none;
+}
+
+
+
+
+.file-menu-option-list {
+	
+	background-color: #F0F0E7;
+    border-bottom: 1px solid #D8D2BD;
+    display: block;
+}
+
+.file-menu-option-list li{
+	
+	display: inline-block;
+    padding: 2px 3px;
+}
+.file-menu-option-list li a{
+	
+	display: inline-block;
+    color: inherit;
+    padding: 2px 3px;
+    letter-spacing: 0px;
+    border: none;
+    font-size: 11px;
+	
+	
+}
+.file-menu-option-list li:hover {
+	background: white;
+}
+    
+	
+.body-txt {
+	resize: none;
+	outline: none;
+    width: calc(100% - 2px);
+    height: calc(100% - 22px);
+}
+
+.file-panel {
+	
+	list-style: none;
+	position: absolute;
+    top: 50px;
+    width: 83px;
+    height: 90px;
+    background: #f2f2f2;
+	
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    padding-left: 1px;
+    padding-right: 1px;
+	
+	visibility: hidden;
+	
+}
+
+.file-panel hr {
+	height: 1px;
+    color: #d7d7d7;
+    background-color: #d7d7d7;
+    border: none;
+}
+
+.file-panel li {
+	width:70px;
+	height: 13px;
+    margin-top: 0px;
+	padding-left: 10px;
+}
+
+.file-panel li:hover {
+	background: #91c9f7;
+}
+    
+	
+.right-click-option-list {
+	
+    z-index: 6;
+	position:absolute;
+	width: 120px;
+	height: 126px;
+    background: white;
+    color: black;
+	
+	list-style-type: none;
+	
+	
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    padding-left: 1px;
+    padding-right: 1px;
+	
+	
+}
+
+.right-click-option-list li {
+	height: 12px;
+	padding-left: 10px;
+    margin-top: 3px;
+	
+}
+.right-click-option-list li:hover {
+	background: #bbb7c8;
+}
+
+
+
+
+.right-click-icon-option-list {
+	
+    z-index: 6;
+	position:absolute;
+	width: 120px;
+	height: 148px;
+    background: white;
+    color: black;
+	
+	list-style-type: none;
+	
+	
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    padding-left: 1px;
+    padding-right: 1px;
+	
+	
+}
+
+.right-click-icon-option-list li {
+	height: 12px;
+	padding-left: 10px;
+    margin-top: 3px;
+	
+}
+.right-click-icon-option-list li:hover {
+	background: #bbb7c8;
+}
+
+
+.right-click-option-list-arrange {
+	
+	padding-bottom: 12px;
+	
+}
+
+
+
+.disabled {
+	
+	background: gray;
+	
+}
+
+.zoomed {
+	
+    zoom: 0.8;
+    -moz-transform: scale(0.8);
+}
+
+.generator_icon {
+	
+	height: 30px;
+    width: 25px;
+	position: absolute !important;
+	
+}
+
+.generator_icon h4{
+	
+ position: absolute;
+    top: 12px;
+    width: 76px;
+    left: 26px;
+    bottom: 1px;
+    font-size: 9px;
+    color: black;
+;
+}
+
+.pdf-generator-icon {
+	    top: 45px;
+    left: 5px;
+	background: url("../Utilis/images/pdf_file_icon.png") 100% 100%;
+	background-size: 100% 100%;
+}
+
+.system_report {
+	top: 82px;
+}
+
+
+
+
+.txt-icon {
+	
+    zoom: 0.9;
+    -moz-transform: scale(0.9);
+	height: 78px;
+	width: 60px;
+	position: absolute !important;
+	
+	margin-left: 9px;
+	
+	
+}
+
+.config-file img{
+	
+	height: 51px !important;
+    margin-top: 5px !important;
+    width: 38px !important;
+	
+}
+
+.txt-icon-image {
+	
+	margin-left: 9px;
+	
+}
+
+
+.txt-icon-title {
+	
+	text-align: center;
+	text-shadow: 0px 0px 2px #000;
+	
+}
+
+.generator_icon .txt-icon-title {
+	
+	text-shadow: none;
+}
+
+
+
+.txt-icon-title-rename {
+	position: absolute;
+    bottom: 0px;
+    left: -42px;
+	text-align: center;
+}
+
+.error-panel {
+	
+	position: absolute;
+	top: 0px;
+	left: 150px;
+	font-size: 20px;
+	color: red;
+	
+}
+
+.taskbar {
+	
+	
+    position: absolute;
+    bottom: 0px;
+	
+	height: 25px;
+	width: 700px;
+	
+	
+	background-repeat: no-repeat;
+    background-size: 100% 25px;
+	
+	background-image: url("../Utilis/images/task_bar.png");
+	
+}
+
+.taskbar .taskbarList {
+	
+	
+    margin-left: 83px;
+	
+}
+
+.task {
+	background: #397DF3 url("../Utilis/images/taskbar_button.png");
+    background-position: 0px -10px;
+    float: left;
+    width: 133px;
+    height: 17px;
+    margin-top: 6px;
+}
+	
+
+.taskIcon{
+	
+	float: left;
+    background-size: 100% 100%;
+    background-image: url("../Utilis/images/file-txt-icon.png");
+	width: 13px;
+    height: 15px;
+    margin-left: 3px;
+	
+	
+	
+}
+.taskTitle{
+	
+	position: absolute;
+    margin-left: 20px;
+    /* width: 115px; */
+    margin-top: 3px;
+    font-size: 10px;
+	
+	
+}
+
+.activeTask {
+	
+    background-position: 0px -80px;
+}
+
+.main-menu {
+	
+	visibility: hidden;
+	
+	width: 222px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(../Utilis/images/menu.png);
+    z-index: 31;
+    position: absolute;
+    bottom: 22px;
+	
+	
+}
+
+.main-menu-user-name {
+	display: block;
+    position: absolute;
+    top: 16px;
+    left: 40px;
+}
+
+.taskbar-btn-start {
+	width: 59px;
+    height: 22px;
+    position: absolute;
+    bottom: 0;
+}
+
+.main-menu-log-off {
+	position: absolute;
+    width: 45px;
+    height: 20px;
+    bottom: 4px;
+    left: 100px;
+}
+
+.not-implemented {
+	
+	color: gray !important;
+	
+}
+
+
+.properties-details {
+	height:297px;
+	padding-top: 10px;
+	background: url(../Utilis/images/file_properties_panel.jpg);
+}
+.properties-details .row {
+	
+	width: 100%;
+	padding-left: 19px;
+	
+}
+
+.generalDiv {
+    position: absolute;
+    top: -18px;
+    left: 12px;
+    font-size: 10px;
+}
+
+
+.general-preview {
+
+    top: 60px;
+    left: -2px;
+    position: absolute;
+    width: 100%;
+
+}
+
+.generalDiv {
+
+
+
+
+}
+
+.firstRow {
+    height: 44px;
+}
+
+
+
+.firstRow .firstRowIcon {
+
+	width: 30px;
+	height: 40px;
+	
+}
+.firstRow .firstRowTitle {
+
+    margin-left: 73px;
+    margin-top: -25px;
+    width: 163px;
+    height: 21px;
+	
+}
+
+
+
+.secondRow {
+
+    height: 46px;
+    margin-top: 11px;
+
+}
+
+
+.secondRow .secondRowTypeOfFile {
+
+    width: 100%;
+    height: 16px;
+
+}
+.secondRowTypeOfFile .secondRowTypeOfFileLabel {
+    font-size: 11px;
+    width: 75px;
+    float:left;
+}
+.secondRowTypeOfFile .secondRowTypeOfFileTitle {
+    
+    font-size: 11px;
+    width: 73px;
+    float:left;
+}
+
+
+
+
+.secondRow .secondRowOpensWith {
+    margin-top: 5px;
+    height: 22px;
+}
+
+.secondRowOpensWith .secondRowOpensWithLabel {
+    width: 75px;
+    float:left;
+}
+.secondRowOpensWith .secondRowOpensWithIcon {
+    width: 20px;
+    height: 28px;
+    float:left;
+    margin-top: -8px;
+}
+
+.secondRowOpensWith .secondRowOpensWithTitle {
+    width: 40px;
+    
+    margin-left: 9px;
+    float:left;
+}
+
+
+
+
+.thirdRow {
+
+    height: 71px;
+    margin-top: 13px;
+
+}
+
+
+.thirdRow .thirdRowLocationDiv {
+    margin-top:4px;
+    height: 18px;
+
+}
+
+.thirdRowLocationDiv .thirdRowLocationLabel {
+    width: 75px;
+    float: left;
+}
+.thirdRowLocationDiv .thirdRowLocationTitle {
+    width: 50px;
+    float: left;    
+
+}
+
+
+
+.thirdRow .thirdRowSizeDiv {
+    margin-top:4px;
+    height: 18px;
+}
+
+.thirdRowSizeDiv .thirdRowSizeLabel {
+    width: 75px;
+    float: left;
+}
+.thirdRowSizeDiv .thirdRowSizeLabelTitle {
+    width: 50px;
+    float: left;
+}
+
+
+
+.thirdRow .thirdRowSizeOnDiskDiv {
+    margin-top:4px;
+    height: 18px;
+}
+
+.thirdRowSizeOnDiskDiv .thirdRowSizeOnDiskLabel {
+    width: 75px;
+    float: left;
+}
+.thirdRowSizeOnDiskDiv .thirdRowSizeOnDiskLabelTitle {
+    width: 50px;
+    float: left;
+}
+
+
+
+.fourthRow {
+
+    margin-top: 11px;
+
+
+}
+
+.fourthRow .fourthRowCreatedDiv {
+    height: 18px;
+}
+
+.fourthRowCreatedDiv .fourthRowCreatedLabel {
+    width: 75px;
+    float: left;
+}
+.fourthRowCreatedDiv .fourthRowCreatedTitle {
+    width: 210px;
+    float: left;
+}
+
+
+.fifthRow {
+
+    margin-top: 18px;
+
+}
+
+.fifthRow .fifthRowAttributes {
+    height: 18px;
+}
+
+.fifthRowAttributes .fifthRowAttributesLabel {
+    width: 75px;
+    float: left;
+}
+.fifthRowAttributes .fifthRowReadOnlyBox {
+    width: 11px;
+    height: 11px;
+    background: white;
+    border: 1px solid grey;
+    float: left;
+}
+.fifthRowReadOnlyBox .fifthRowReadOnlyBoxMarked {
+    width: 8px;
+    height: 8px;
+    margin-left: 1px;
+    margin-top: 1px;
+    background: black;
+    float: left;
+}
+.fifthRowAttributes .fifthRowReadOnlyBoxLabel {
+    width: 75px;
+    float: left;
+    margin-left: 8px;
+
+}
+
+
+.clock {
+	    position: absolute;
+    bottom: 4px;
+    right: 5px;
+    font-size: 10px;
+}
