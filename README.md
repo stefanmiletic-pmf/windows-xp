@@ -7,7 +7,7 @@ Arhitektura:
 ![Alt text](arhitektura.png?raw=true "Title")
 
 
-*U docs folderu se nalazi dokumentacija.*
+*U docs/index.html folderu se nalazi dokumentacija.*
 
 ### Instalacija:
 1. Uneti odovarajuci username i password za pristup serveru u fajlu ./php/functions.js na linijima 4 i 5.
@@ -66,7 +66,7 @@ Postoje tri grupe korisnika:
 	3. tip GUEST moze da:
 		3.1 samo cita fajlove
 		
-4.PRETRAZIVANJE PODATAKA 
+4. PRETRAZIVANJE PODATAKA 
 	1. bilo kojim karakterom koji je u abecedi, oznacava se fajl na radnoj povrsini cije ime pocinje tim karakterom. 
   Pritiskom opet na isti karakter oznacava se sledeci fajl cije ime pocinje tim karakterom i tako dalje...
 		
