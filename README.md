@@ -51,7 +51,7 @@ Postoje tri grupe korisnika:
 	
 2.  PRIJAVA NA SISTEM  sadrzi:
 	1. formu za prijavu
-  2. registracionu formu
+  	2. registracionu formu
 	
 3. RAZLICIT KORISNICKI INTERFEJS U ZAVISNOSTI OD TIPA KORISNIKA:
 	1. tip ADMIN moze da:
