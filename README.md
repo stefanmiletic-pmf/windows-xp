@@ -22,7 +22,7 @@ Parcijalna replikacija Windows XP:
 Tri grupe korisnika: USER, ADMIN, GUEST dele jedan "kompjuter" zavisno od tipa korisnika, odgovarajuce dozvole imaju za rad sa fajlovima i administracijom korisnika.
 Korisceni alati i tehnologije:
 1. JS 
-	1. Vannila: 99%
+	1. Vanilla: 99%
 	2. JQuery: 1 linija koda
 	3. JQueryUI: 1 linija koda 
 2. PHP 
