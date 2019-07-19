@@ -558,7 +558,7 @@ body {
 
 
 .general-preview {
-
+	font-size: 11px;
     top: 60px;
     left: -2px;
     position: absolute;
