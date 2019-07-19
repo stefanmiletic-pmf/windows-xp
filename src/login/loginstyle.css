@@ -9,7 +9,7 @@
 html {
 	
 	
-	font: 12px/100% Arial, Helvetica, sans-serif;
+	font: 12px Tahoma,Verdana,Segoe,sans-serif;
 	
 }
 
@@ -71,24 +71,31 @@ html {
 
 .btn {
 	
-	
-	width: 96px;
-	height: 23px;
-    background: url(../Utilis/images/login_button_normal.png) no-repeat;
-    background-size: 100% 100%;
+	cursor: pointer !important;
+    line-height: 22px;
+    text-align: center;
 	position: absolute;
-   
+    width: 75px;
+    height: 22px;
 	
+    background: url(../Utilis/images/button_confirm.png) no-repeat;
+	background-position-y: -46px;
 	
 }
 
 
-.btn:active {
-	
-	background: url("../Utilis/images/login_button_hover.png") no-repeat;
-    background-size: 100% 100%;
+.btn.active {
+	background-position-y: -23px !important;
 	
 }
+
+
+.btn:hover{
+	
+	background-position-y: 0px !important;
+	
+}
+
 
 .btn span {
 	
@@ -109,40 +116,33 @@ html {
 	
 }
 
-.btn_ok {
-	
-	position: absolute;
-    width: 75px;
-    height: 22px;
+
+
+.login_btn_ok {
     left: 168px;
     bottom: 15px;
 	
-	background: url("../Utilis/images/login_ok_button_normal.png");
-	
-}
-
-.btn_ok:hover{
-	
-	background: url("../Utilis/images/login_ok_button_pressed.png");
 	
 }
 
 
-.btn_options {
+
+.login_btn_cancel {
 	
-	position: absolute;
-    width: 75px;
-    height: 22px;
+    left: 249px;
+    bottom: 15px;
+	
+	
+}
+
+
+
+.login_btn_options {
+	
     right: 14px;
     bottom: 15px;
 	
-	background: url("../Utilis/images/login_options_button_normal.png");
 	
-}
-
-.btn_options:hover {
-	
-	background: url("../Utilis/images/login_options_button_pressed.png");
 }
 
 .login_error {
@@ -205,18 +205,13 @@ html {
 }
 
 .register_btn_ok {
-	position: absolute;
-    left: 169px;
-    width: 73px;
-    height: 21px;
+
+    left: 168px;
     bottom: 15px;
 }
 
 .register_btn_cancel {
-	position: absolute;
-    left: 250;
-    width: 73px;
-    height: 21px;
+    left: 249px;
     bottom: 15px;
 }
 
