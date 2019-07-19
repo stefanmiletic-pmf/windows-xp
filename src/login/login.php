@@ -180,15 +180,20 @@
 						<input type="password" name="password" id="password" autocomplete="off">
 			
 					
-						<div class="btn_ok" type="submit">
+						<div class="btn login_btn_ok active" type="submit">
+						OK
 						</div>
 						
 					</form>
 					
 					
 					
-					<div class="btn_options">
+					<div class="btn login_btn_cancel">
+					Cancel
+					</div>
 					
+					<div class="btn login_btn_options">
+					Options >>
 					</div>
 		
 		
@@ -214,12 +219,12 @@
 			
 					</form>
 			
-					<div class="register_btn_ok">
-					
+					<div class="btn register_btn_ok active">
+						OK
 					</div>
 					
-					<div class="register_btn_cancel">
-					
+					<div class="btn register_btn_cancel">
+						Cancel
 					</div>
 					
 					<div class="register_error">
