@@ -1,10 +1,27 @@
 export var zIndex = 10;
+var domWithTheHighestZIndex = null;
+
 /**
    * Returns next z index.
    * @returns {integer}
    */
-export var getZindex = function() {
-	return zIndex++;
+export var getZindex = function(dom) {
+	domWithTheHighestZIndex = dom;
+	zIndex +=1;
+	return zIndex;
+}
+
+export var getCurrentZIndex = function() {
+	return zIndex;
+}
+
+
+/**
+   * Returns dom with the highest z index.
+   * @returns {integer}
+   */
+export var getDomWithHighestZIndex = function() {
+	return domWithTheHighestZIndex;
 }
 
 
@@ -32,9 +49,9 @@ export default class ViewerUtilis {
 
 	static get  FLAG_RESIZE_MAX(){ return 1; }
 	static get  FLAG_RESIZE_MIN(){ return 2; }
-
-	static get  CONST_PROPERTIES_SIZE_X(){ return 307; }
-	static get  CONST_PROPERTIES_SIZE_Y(){ return 310; }
+	
+	static get  CONST_PROPERTIES_SIZE_X(){ return 293; }
+	static get  CONST_PROPERTIES_SIZE_Y(){ return 351; }
 	
 	static get  CONST_FILE_SIZE_X(){ return screen.width/3; }
 	static get  CONST_FILE_SIZE_Y(){ return 330; }

@@ -72,7 +72,7 @@ export default class WindowBuilder {
 		//this.DOM.id = name;
 		this.DOM.className = "window-base ui-draggable ui-draggable-handle";
 		this.DOM.id = file_controller.getName();
-		this.DOM.style.zIndex = getZindex();
+		this.DOM.style.zIndex = getZindex(this.DOM);
 		var type = this.file_controller.getType();
 		var cssExtension = "";
 		
@@ -98,7 +98,9 @@ export default class WindowBuilder {
 		var domAsArg = this.DOM;
 		this.DOM.addEventListener('click', function(e) {
 		
-			domAsArg.style.zIndex = getZindex();
+			e.stopPropagation();
+		
+			domAsArg.style.zIndex = getZindex(domAsArg);
 			
 			if ( taskbarModule.checkIfWindowIsCurrentlyActive(file_controller.getName() ) )
 				return;
@@ -106,6 +108,7 @@ export default class WindowBuilder {
 			taskbarModule.switchActiveTaskTo(file_controller.getName());
 			//e.preventDefault();
 			//e.stopPropagation();
+		
 		
 		}, false);
 		

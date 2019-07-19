@@ -125,10 +125,18 @@ export default class Highlight extends ModuleBase {
 		
 		document.addEventListener("keydown", function(e) {
 			
+			
+			if ( !this.viewer_as_arg.isHudActive() ) 
+				return;
+			
+			
 			if ( this.checkDependency() == false )
 				return;
 			
 			this.resetOtherModules();
+			
+			
+			
 			
 			if(this.activeSearchedByClick!= null) {
 			

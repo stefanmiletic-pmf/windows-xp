@@ -7,6 +7,8 @@ import RenamingModule from "../Viewers/widgets/RenamingModule.js";
 import TaskbarModule from "../Viewers/widgets/TaskbarModule.js";
 import ViewerIcon from "./ViewerIcon.js";
 import ViewerProperties from "./ViewerProperties.js";
+import {getZindex, getCurrentZIndex} from "./ViewerUtilis.js";
+
 export default class ViewerPlatform {
 
 
@@ -263,7 +265,13 @@ export default class ViewerPlatform {
 		 * @private
 		 */
 		this.totalFileNumber = 0;
-
+	
+		/**
+		 * To be able to check if hud recived latest action.
+		 * @type {ControllerPlatform} 
+		 * @private
+		 */
+		this.zIndex = getZindex();
 		
 		/**
 		 * Icons.
@@ -315,7 +323,7 @@ export default class ViewerPlatform {
 		
 		this.dom = this.createPlatformView();
 		
-		this.z_index = 5;
+		//this.z_index = 5;
 		
 		
 		
@@ -338,15 +346,15 @@ export default class ViewerPlatform {
 		this.initTaskBarModule();
 	
 	}
-	/**
-	 *
-	 * Returns next z index.
-	 * @returns {void}
-	 */
-	getNextZindex(){
-		this.z_index+=1;
-		return this.z_index;
-	}
+	// /**
+	 // *
+	 // * Returns next z index.
+	 // * @returns {void}
+	 // */
+	// getNextZindex(){
+		// this.z_index+=1;
+		// return this.z_index;
+	// }
 	/**
 	 *
 	 * Creates platform view.
@@ -389,9 +397,13 @@ export default class ViewerPlatform {
 	initEventHudClicked() {
 		document.addEventListener("click", function(e){
 				
+			
+				
 			this.resetModules();
 			
 			this.closeMenu();
+			
+			this.zIndex = getZindex();
 			//var icon_viewer = this.slectedIcon.icon;
 			//icon_viewer.stopRenaming();
 			
@@ -742,5 +754,17 @@ export default class ViewerPlatform {
 	logOff() {
 		this.controller.logOff();
 	}
+	
+	/**
+	 *
+	 * Logs off user.
+	 * @returns {void}
+	 */
+	
+	isHudActive() {
+		return getCurrentZIndex() == this.zIndex;
+	}
+	
+	
 	
 }

@@ -342,7 +342,7 @@ export default class PanelCreator extends ModuleBase{
 		
 		this.activePanel = this.right_click_hud_panel_dom;
 		this.right_click_hud_panel_dom.style.visibility = "visible";
-		this.right_click_hud_panel_dom.style.zIndex = getZindex();
+		this.right_click_hud_panel_dom.style.zIndex = getZindex(this.right_click_hud_panel_dom);
 		this.is_right_click_hud_active = true;
 		
 		this.right_click_hud_panel_dom.style.left = pos_x_px;
@@ -444,8 +444,7 @@ export default class PanelCreator extends ModuleBase{
 	 * @returns {boolean}
 	 */	
 	get_icon_panel_visiblity() {
-		return  
-		this.is_right_click_icon_active;
+		return this.is_right_click_icon_active;
 	}
 
 		/**
@@ -475,7 +474,7 @@ export default class PanelCreator extends ModuleBase{
 		this.activePanel = this.right_click_icon_panel_dom;
 		this.is_right_click_icon_active = true;
 		this.right_click_icon_panel_dom.style.visibility = "visible";
-		this.right_click_icon_panel_dom.style.zIndex = getZindex();
+		this.right_click_icon_panel_dom.style.zIndex = getZindex(this.right_click_icon_panel_dom);
 				
 		this.right_click_icon_panel_dom.style.left = pos_x_px;
 		this.right_click_icon_panel_dom.style.top = pos_y_px;
@@ -613,6 +612,7 @@ export default class PanelCreator extends ModuleBase{
 			
 			this.resetOtherModules();
 			////console.log("contexmenu hud");
+			
 			
 			if(this.get_icon_panel_visiblity())
 				this.hide_icon_panel();

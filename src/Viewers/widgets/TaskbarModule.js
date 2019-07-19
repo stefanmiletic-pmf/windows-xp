@@ -210,7 +210,7 @@ export default class TaskbarModule extends ModuleBase{
 		
 		task.addEventListener("click", function() {
 			this.switchActiveTaskTo(name);
-			document.getElementById(name).style.zIndex = getZindex();
+			document.getElementById(name).style.zIndex = getZindex(document.getElementById(name));
 			
 		}.bind(this));
 		

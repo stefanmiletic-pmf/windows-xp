@@ -2,6 +2,8 @@ import ViewerBase from './ViewerBase.js';
 import ViewerUtilis from './ViewerUtilis.js';
 import WindowBuilderFilePropertiesDirector from './Builders/WindowBuilderFilePropertiesDirector.js';
 import ControllerFileBase from '../Controllers/ControllerFileBase.js';
+import HighlightButtons from "./widgets/HighlightButtons.js";
+import {getCurrentZIndex} from "./ViewerUtilis.js";
 
 export default class ViewerProperties extends ViewerBase{
 	
@@ -32,7 +34,6 @@ export default class ViewerProperties extends ViewerBase{
 	 */
 	setupBodyforDetailsPreview(user_priv) {
 		
-		console.log(this.file_controller);
 		var type = ViewerUtilis.getExtension(this.file_controller.getFileType());
 		
 
@@ -241,16 +242,77 @@ export default class ViewerProperties extends ViewerBase{
 		
 		
 		
+		
+		var sixthRow = document.createElement("div");
+		sixthRow.className = "row sixthRow";
+		
+		var sixthRowBtnOk = document.createElement("div");
+		sixthRowBtnOk.className = "btn properties-btn properties-ok active";
+		sixthRowBtnOk.innerHTML = "OK";
+		
+		var sixthRowBtnCancel = document.createElement("div");
+		sixthRowBtnCancel.className = "btn properties-btn properties-cancel";
+		sixthRowBtnCancel.innerHTML = "Cancel";
+		
+		
+		sixthRow.appendChild(sixthRowBtnOk);
+		sixthRow.appendChild(sixthRowBtnCancel);
+		
+		var propertiesConfirmButtons = {
+		currHighlightIndex: 0,
+		buttons: {
+			
+				ok: {
+					dom: sixthRowBtnOk,
+					actions: {
+						"click": function(e) {  
+							this.file_controller.removeView();
+							
+							e.preventDefault();
+							e.stopPropagation();
+						}.bind(this),
+					}
+				},
+				cancel: {
+					dom: sixthRowBtnCancel,
+					actions: {
+						"click": function(e) {  
+							this.file_controller.removeView();
+							
+							e.preventDefault();
+							e.stopPropagation();
+						}.bind(this),
+					}
+				}
+			}
+		
+		};
+		HighlightButtons.registerActions(propertiesConfirmButtons);
+		document.addEventListener("keydown", function(e) {
+			
+			var m_zIndex = parseInt(this.dom.style.zIndex)
+			
+			if ( getCurrentZIndex() == m_zIndex ) 
+				HighlightButtons._on_key_pressed(e.keyCode, propertiesConfirmButtons);
+			
+			
+			e.stopPropagation();
+		}.bind(this), false);
+		
 		preview.appendChild(generalDiv);
 		preview.appendChild(firstRow);
 		preview.appendChild(secondRow);
 		preview.appendChild(thirdRow);
 		preview.appendChild(fourthRow);
 		preview.appendChild(fifthRow);
+		preview.appendChild(sixthRow);
 		this.domBody.appendChild(preview);
 		this.domBody.className += " properties-details";
 		
 	}
+	
+	
+	
 
 	
 }
