@@ -2,7 +2,7 @@
 $dbhost = "localhost";
 $dbname = "windowsxp";
 $dbuser = "root";
-$dbpass = "123pass";
+$dbpass = "root-password";
 $appname = "Windows XP";
 
 $connection = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
