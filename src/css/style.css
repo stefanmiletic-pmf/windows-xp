@@ -839,3 +839,9 @@ body {
     right: 5px;
     font-size: 10px;
 }
+
+.bsod {
+
+	background: url(Utilis/images/bsod.png) 100% 100%;
+    background-size: 100% 100%;
+}
