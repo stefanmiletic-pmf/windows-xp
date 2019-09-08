@@ -66,8 +66,7 @@ Opis:
 		
 5. DINAMICKE TABELE
 	1. paginacija je uradjena na sledeci nacin: ako baza sadrzi vise od 30 fajlova, ikonice postaju manje
-	2. ukoliko korisnik klikne na opciju:
-		Arrange By Name, on sortira ikone na radnoj povrsini
+	2. Opcijom Arrange By Name sortira ikone na radnoj povrsini
 
 6. GENERISANJE IZVESTAJA
 	Sve akcije:
