@@ -6,8 +6,6 @@ Arhitektura:
 ![Alt text](arhitektura.png?raw=true "Title")
 
 
-*U docs/index.html folderu se nalazi dokumentacija.*
-
 ### Instalacija:
 1. Uneti odovarajuci username i password za pristup serveru u fajlu ./php/functions.js na linijima 4 i 5.
 2. Kreirati tabelu "windowsxp" u bazi.
