@@ -34,7 +34,6 @@ Koriscene biblioteke:
 			
 Ostatak je opisano ispod:
 
-Koriscena arhitektura pri izradi sistema: MVC.
 Videti arhitekturu na slici arhitektura.png.
 
 Opis:
