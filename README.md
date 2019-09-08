@@ -1,5 +1,5 @@
 # Parcijalna replikacija windows xp-a
-
+Video specifikacija: https://www.youtube.com/watch?v=XJNxD1IGi3c
 
 
 Arhitektura:
