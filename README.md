@@ -1,5 +1,4 @@
 # Parcijalna replikacija windows xp-a
-Parcijalna replikacija windows xp-a
 
 
 
