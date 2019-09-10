@@ -1,7 +1,7 @@
 # Parcijalna replikacija windows xp-a
 Video specifikacija: https://www.youtube.com/watch?v=XJNxD1IGi3c
 
-# Sadrzaj
+# Sadržaj
 1. [Arhitektura](#sec1)
 2. [Instalacija](#sec2)
 3. [OPIS](#sec3)
